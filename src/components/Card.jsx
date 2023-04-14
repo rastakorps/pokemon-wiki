@@ -18,7 +18,7 @@ export const Card = ({pokemon}) => {
         transform hover:scale-105 transition duration-300 ease-in-out"
     >
         <div className='flex justify-center items-center bg-[#ffcc01] w-10 h-10 rounded-full'><p>#{id}</p></div>
-        <p className='text-xl font-bold'>{name}</p>
+        <p className='text-xl font-bold uppercase'>{name}</p>
         <img src={pictureUrl} alt="pokemon img" />
     </div>
   )
