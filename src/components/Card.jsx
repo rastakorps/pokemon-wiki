@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Card = ({pokemon}) => {
+export const Card = ({pokemon, setCurrentPokemonId}) => {
   const {id, name, pictureUrl} = pokemon;
 
   return (
@@ -16,6 +16,7 @@ export const Card = ({pokemon}) => {
         hover:bg-red-500
         hover:text-white
         transform hover:scale-105 transition duration-300 ease-in-out"
+      onClick={() => { setCurrentPokemonId(id) }}
     >
         <div className='flex justify-center items-center bg-[#ffcc01] w-10 h-10 rounded-full'><p>#{id}</p></div>
         <p className='text-xl font-bold uppercase'>{name}</p>
